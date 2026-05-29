@@ -168,11 +168,12 @@ The interactive visual shell, genome system, neural controllers, rich sensors, s
 ---
 
 Primordia is intended for curiosity-driven exploration of neuroevolution, artificial life, the origins of complex behavior from simple rules, and machine learning concepts.
-
 ---
 ## First Run:
 <img width="1500" height="1350" alt="run_2118745179_20260529_023824" src="https://github.com/user-attachments/assets/8ccd2a3d-195b-4746-90c3-ee90aee97606" />
 
 ## Most Recent Run:
 <img width="1500" height="1950" alt="run_103192317_20260529_061312" src="https://github.com/user-attachments/assets/9a261b93-2e66-4206-b861-85aabf7bd69c" />
-
+---
+## Known Issues:
+- Food sources spawn on boulders, restricting reachable food spawns
