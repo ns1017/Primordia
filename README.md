@@ -174,6 +174,7 @@ Primordia is intended for curiosity-driven exploration of neuroevolution, artifi
 
 ## Most Recent Run:
 <img width="1500" height="1950" alt="run_103192317_20260529_061312" src="https://github.com/user-attachments/assets/9a261b93-2e66-4206-b861-85aabf7bd69c" />
+
 ---
 ## Known Issues:
 - Food sources spawn on boulders, restricting reachable food spawns
