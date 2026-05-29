@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primordia"
+version = "0.1.0"
+description = "Primordia - An early biological life simulator using neuroevolution (pyglet + numpy)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyglet>=2.0.10",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+primordia = "primordia.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

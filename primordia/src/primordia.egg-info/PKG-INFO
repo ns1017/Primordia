@@ -1,0 +1,105 @@
+Metadata-Version: 2.4
+Name: primordia
+Version: 0.1.0
+Summary: Primordia - An early biological life simulator using neuroevolution (pyglet + numpy)
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyglet>=2.0.10
+Requires-Dist: numpy>=1.26
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# Primordia
+
+An interactive early biological life simulator built with neuroevolution in Python.
+
+Agents are controlled by small neural networks whose weights evolve across generations through mutation and natural selection (survival + successful reproduction).
+
+## Goals
+
+- Watch genuinely interesting behaviors emerge from simple neural controllers + evolution
+- Strong emphasis on genetic encoding, heredity, and open-ended population dynamics
+- Beautiful, smooth, interactive visual toy (not a research paper)
+- Easy to run and experiment with on a normal Windows machine
+
+## Quick Start (Windows + PowerShell)
+
+### 1. Create and activate a virtual environment
+
+```powershell
+cd K:\primordia
+
+# Create venv (do this once)
+python -m venv .venv
+
+# Activate it (run this every time you open a new terminal)
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks the activation script, run this once:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### 2. Install the project
+
+```powershell
+pip install -e .
+```
+
+This installs **pyglet** + numpy (much easier and more reliable on modern Python than pygame) and makes the `primordia` command available.
+
+### 3. Run it
+
+```powershell
+primordia
+```
+
+Or equivalently:
+
+```powershell
+python -m primordia
+```
+
+### Controls (inside the simulation)
+
+- **Space** — Pause / resume
+- **R** — Reset the world
+- **Esc** or close window — Quit
+- **Mouse click** on an agent — Select it for inspection
+
+## Project Structure
+
+```
+primordia/
+├── src/primordia/
+│   ├── __init__.py
+│   ├── app.py           # Pyglet rendering + input handling
+│   ├── simulation.py    # World, agents, physics, food, reproduction
+│   ├── genome.py        # Genetic representation (physical traits + brain weights)
+│   ├── brain.py         # Small numpy neural networks (the "mind")
+│   ├── config.py        # All tunable parameters in one place
+│   └── __main__.py
+├── pyproject.toml
+└── README.md
+```
+
+## Development Philosophy
+
+- Everything important (sensing, decision making, energy, reproduction) must be evolvable.
+- The simulation should feel alive even at small population sizes.
+- We prioritize visual emergence and fun over strict biological accuracy.
+- Code must stay readable and hackable.
+
+## Roadmap (Current Focus)
+
+1. Clean runnable visual shell (done in v0.1)
+2. Proper Genome + evolvable neural controller system
+3. Rich sensor model feeding the brains
+4. Meaningful selection pressure and interesting emergent strategies
+5. Better telemetry (lineage tracking, trait distributions, behavioral diversity)
+
+---
+
+Built for curiosity about early life, complexity, and machine learning as an evolutionary engine.

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/primordia/__init__.py
+src/primordia/__main__.py
+src/primordia/app.py
+src/primordia/brain.py
+src/primordia/config.py
+src/primordia/genome.py
+src/primordia/simulation.py
+src/primordia.egg-info/PKG-INFO
+src/primordia.egg-info/SOURCES.txt
+src/primordia.egg-info/dependency_links.txt
+src/primordia.egg-info/entry_points.txt
+src/primordia.egg-info/requires.txt
+src/primordia.egg-info/top_level.txt
